@@ -15,6 +15,24 @@ docker build -t todos-app .
 ```
 2. run docker image with exposed port
 ```
-docker run -d --name fastapicontainer -p 80:80 todos-app
+docker run -d --name fastapicontainer -p 80:80 todos-app --env-file ./app/.env
 ```
 3. enjoy!
+
+## Deployment
+
+### Deploy to Deta
+
+1. Go to app folder
+```
+cd app/
+```
+2. Login Deta account
+> I recommended to use google chrome as default browser.
+```
+deta login
+```
+3. Deploy this project to Deta
+```
+deta deploy
+```

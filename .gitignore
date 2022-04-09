@@ -23,3 +23,9 @@ archive.zip
 # vim temporary files
 *~
 .*.sw?
+
+# Mac files
+.DS_Store
+
+# environment variable
+.env

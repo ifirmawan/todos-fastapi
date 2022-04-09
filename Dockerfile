@@ -1,6 +1,6 @@
 from python:3.7
 
-RUN pip install fastapi uvicorn
+RUN pip install deta fastapi uvicorn
 
 EXPOSE 80
 
