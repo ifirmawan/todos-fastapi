@@ -9,13 +9,20 @@
 4. enjoy!
 
 ### With Docker
+
+#### With docker-compose
+
+```
+docker-compose up -d
+```
+#### Without docker-compose
 1. build this docker image
 ```
 docker build -t todos-app .
 ```
 2. run docker image with exposed port
 ```
-docker run -d --name fastapicontainer -p 80:80 todos-app --env-file ./app/.env
+docker run -e DETA_PROJECT_KEY="Your Deta project Key" -d --name fastapicontainer -p 80:80 todos-app
 ```
 3. enjoy!
 

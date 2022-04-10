@@ -28,7 +28,7 @@ fake_items_db = [{"item_name": "Foo"}, {"item_name": "Bar"}, {"item_name": "Buz"
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "Hello world!"}
 
 @app.post("/todos", status_code=201)
 def create_todo(todo: Todo):

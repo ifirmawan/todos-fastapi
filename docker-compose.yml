@@ -1,0 +1,11 @@
+version: '3'
+services:
+    backend:
+        build: .
+        tty: true
+        ports:
+          - "8000:8000"
+        volumes:
+          - ./app:/code/app
+        env_file:
+          - ./app/.env
