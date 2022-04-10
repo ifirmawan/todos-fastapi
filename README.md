@@ -22,7 +22,10 @@ docker build -t todos-app .
 ```
 2. run docker image with exposed port
 ```
-docker run -e DETA_PROJECT_KEY="Your Deta project Key" -d --name fastapicontainer -p 80:80 todos-app
+docker run \
+-e DETA_PROJECT_KEY="Your Deta project Key" \
+-d --name todos-container \
+-p 8000:8000 todos-app
 ```
 3. enjoy!
 
