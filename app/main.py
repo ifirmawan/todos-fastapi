@@ -2,7 +2,7 @@ from fastapi import Depends, FastAPI, Request
 from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
 
-from .dependencies import get_query_token, get_token_header
+from .modules.dependencies import get_query_token, get_token_header
 from .internal import admin
 from .routers import items, users, transport
 

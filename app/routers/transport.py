@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends
 from pydantic import BaseModel
 
-from ..dependencies import get_token_header
+from ..modules.dependencies import get_token_header
 from ..modules.transportation_problem import transportationProblem
 from ..modules.modi_method import MODI, calculate_cost
 
